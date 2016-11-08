@@ -10,7 +10,7 @@ int main()
  char resp2;
  char resp3;
 
-//Apresentação inicial do programa
+//ApresentaÃ§Ã£o inicial do programa
     printf("-----------------------------------------------------------------------------\n");
     printf("                                 QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
@@ -42,20 +42,41 @@ int main()
 
     printf("\n\nDigite o codigo da materia desejada: ");
     scanf("%d", &resp);
-    
+
      system("cls");
-    
+
     if (resp==1)
         {
-        	printf ("Voce escolheu portugues \n"); 
-			printf ("Vamos começar! \n");		
-	
+
+    printf("-----------------------------------------------------------------------------\n");
+    printf("                                 PORTUGUES\n");
+    printf("-----------------------------------------------------------------------------\n");
+        	printf ("Vamos comecar! \n\n");
+
+        	printf ("\n1) QUAL PALAVRA ESTA ECRITA CORRETAMENTE?");
+        	printf("\n\na)Chicara");
+        	printf("\nb)Jilo");
+        	printf("\nc)Emcima");
+        	printf("\n\nResposta: ");
+			scanf ("\n%c", &resp3);
         }
-	
-			printf ("\n\n1) Digite as vogais");
-			scanf ("%c", &resp3);
-		   
-	
+
+        if (resp3=='b')
+        {
+        printf("\nResposta certa");
+        printf("\nVoce acaba de ganhar a primeira estrela");
+        printf("\nVamos para a pergunta que vale a segunda estrela");
+
+        }
+
+        else
+      	{
+      		printf ("\n\nVoce errou!\n");
+
+      	}
+
+
+
  return (0);
 
 
