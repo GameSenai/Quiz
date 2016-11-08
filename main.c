@@ -6,11 +6,11 @@
 int main()
 {
 
- int resp;
+ int cod, resp5;
  char resp2;
- char resp3;
+ char resp3, resp4;
 
-//ApresentaÃ§Ã£o inicial do programa
+//Apresentação inicial do programa
     printf("-----------------------------------------------------------------------------\n");
     printf("                                 QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
@@ -31,6 +31,9 @@ int main()
 
       system("cls");
 
+do{
+
+
   printf("\n\nQual materia deseja jogar?");
 
     printf("\n\n(1)Portugues");
@@ -41,11 +44,11 @@ int main()
     printf("\n\n(6)Todos");
 
     printf("\n\nDigite o codigo da materia desejada: ");
-    scanf("%d", &resp);
+    scanf("%d", &cod);
 
      system("cls");
 
-    if (resp==1)
+    if (cod==1)
         {
 
     printf("-----------------------------------------------------------------------------\n");
@@ -53,7 +56,7 @@ int main()
     printf("-----------------------------------------------------------------------------\n");
         	printf ("Vamos comecar! \n\n");
 
-        	printf ("\n1) QUAL PALAVRA ESTA ECRITA CORRETAMENTE?");
+        	printf ("\n1) QUAL PALAVRA ESTA ESCRITA CORRETAMENTE?");
         	printf("\n\na)Chicara");
         	printf("\nb)Jilo");
         	printf("\nc)Emcima");
@@ -67,17 +70,39 @@ int main()
         printf("\nVoce acaba de ganhar a primeira estrela");
         printf("\nVamos para a pergunta que vale a segunda estrela");
 
+printf("\n\nAperte enter para continuar!");
+
+     do{
+        resp2 = getch();
+
+    }while (resp2 != 13);
+    system("cls");
+    printf ("\n1) QUAL PALAVRA ESTA ESCRITA CORRETAMENTE?");
+        	printf("\n\na)Chicara");
+        	printf("\nb)Jilo");
+        	printf("\nc)Emcima");
+        	printf("\n\nResposta: ");
+			scanf ("\n%c", &resp4);
         }
 
         else
       	{
-      		printf ("\n\nVoce errou!\n");
+    printf("-----------------------------------------------------------------------------\n");
+    printf ("\n\nVOCE ERROU!\n");
+      		printf("\n Deseja jogar novamente?");
+      		printf("\n\nSe sim digite 0 se não digite 1: ");
+      		scanf("\n\n%d", &resp5);
+    printf("\n-----------------------------------------------------------------------------\n");
+      	      	}
+    system("cls");
+    printf("\n\nOBRIGADO POR PARTICIPAR DO QUIZ");
+    printf("\n\nNAO DESISTA VOCE AINDA PODE GANHAR AS CINCO ESTRELAS");
 
-      	}
+}
+    while (resp5==0);
 
 
 
  return (0);
-
 
 }
