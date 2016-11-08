@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+
+int main()
+{
+
+ int cod;
+ char cod2;
+ char port_alt[4];
+ char mat_alt[4];
+ char atuais_alt[4];
+
+//Apresentação inicial do programa
+    printf("-----------------------------------------------------------------------------\n");
+    printf("                                 QUIZ\n");
+    printf("-----------------------------------------------------------------------------\n");
+    printf ("Ola, seja bem vindo ao  QUIZ, jogo de perguntas e respostas");
+    printf("\nOnde vc ira testar seus conhecimentos nas principais materias da escola.");
+    printf("\nResponda as perguntas e no final sabera quantas acertou e quantas");
+    printf("\nerrou e qual medalha ganhara.");
+    printf("\n\n---------------------------------------------------------------------------");
+    printf("\n\n                    QUE A SORTE ESTEJA A SEU FAVOR!");
+    printf("\n\n---------------------------------------------------------------------------");
+
+    printf("\n\nAperte enter para comecar!");
+
+     do{
+        cod2 = getch();
+
+    }while (cod2 != 13);
+
+      system("cls");
+
+  printf("\n\nQual materia deseja jogar?");
+
+    printf("\n\n(1)Portugues");
+    printf("\n\n(2)Matematica");
+    printf("\n\n(3)Atualidade");
+    printf("\n\nDigite o codigo da materia desejada: ");
+    scanf("%d", &cod);
+
+     system("cls");
+
+    if (cod==1)
+        {
+
+    printf("-----------------------------------------------------------------------------\n");
+    printf("                                 PORTUGUES\n");
+    printf("-----------------------------------------------------------------------------\n");
+        	printf ("Vamos comecar! \n\n");
+
+        	printf ("\n1) QUAL PALAVRA ESTA ECRITA CORRETAMENTE?");
+        	printf("\n\na)Chicara");
+        	printf("\nb)Jilo");
+        	printf("\nc)Emcima");
+        	printf("\n\nResposta: ");
+			scanf ("\n%c", &port_alt[0]);
+        }
+
+        if (port_alt[0]=='b')
+        {
+        printf("\nResposta certa");
+        printf("\nVoce acaba de ganhar a primeira estrela");
+        printf("\nVamos para a pergunta que vale a segunda estrela");
+
+        }
+
+        else
+      	{
+      		printf ("\n\nVoce errou!\n");
+
+      	}
+
+
+
+ return (0);
+
+
+}
