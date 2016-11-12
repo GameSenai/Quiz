@@ -1,3 +1,4 @@
+
 //Bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,6 +9,7 @@
 
 int main()
 {
+
 //Variáveis
  int cod, resp;
  char cod2;
@@ -17,24 +19,69 @@ int main()
 //Comando de regionalização
  setlocale(LC_ALL, "Portuguese");
 
+
+//Inicializar o programa
+    system("color e");
+
+printf("\n\n\n\n\n\n\n\n\n.oOOOo.  O       o OooOOo.  o.OOoOoo `OooOOo.         .oOOOo.   O       o ooOoOOo OoooOOoO");
+printf("\no     o  o       O O     `O  O        o     `o       .O     o.  o       O    O          o");
+printf("\nO.       O       o o      O  o        O      O       o       O  O       o    o         O");
+printf("\n `OOoo.  o       o O     .o  ooOO     o     .O       O       o  o       o    O        o");
+printf("\n      `O o       O oOooOO'   O        OOooOO'        o       O  o       O    o       O ");
+printf("\n       o O       O o         o        o    o         O    Oo o  O       O    O      o");
+printf("\nO.    .O `o     Oo O         O        O     O        `o     O'  `o     Oo    O     O");
+printf("\n `oooO'   `OoooO'O o'       ooOooOoO  O      o        `OoooO Oo  `OoooO'O ooOOoOo OOooOooO");
+
+
+
+
+//Comando para iniciar o jogo apertando "enter"
+    do{
+        cod2 = getch();
+    }while (cod2 != 13);
+
+    system("cls");/*Limpar a tela anterior*/
+
 //Mudar a cor da linha
- system("color 6");
+    system("color f6");
 
 
 //Apresentação inicial do programa
+    printf("\n\n\n\n\n\n\n-----------------------------------------------------------------------------\n");
+    printf("                              SUPER QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
-    printf("                                 QUIZ\n");
+    printf ("\n\n\n\n   Olá, seja bem vindo ao  SUPER QUIZ, jogo de perguntas e respostas.");
+    printf("\n\n\n   Seu objetivo é acertar todas as questões para conquistar a medalha de ouro");
+    printf("\n\n\n   se errar uma pergunta perde tudo e terá que começar novamente.");
+
+//Comando para avançar o inicio
+    printf("\n\n\n                                                    Aperte enter para avançar!");
+    do{
+        cod2 = getch();
+    }while (cod2 != 13);
+
+system("cls");/*Limpar a tela anterior*/
+
+//Apresentar as instruções do jogo ao usuário
+
+    system("color f0"); /*Mudar a cor da linha*/
+
+    printf("\n\n\n\n-----------------------------------------------------------------------------\n");
+    printf("                           INSTRUÇÕES DO JOGO\n");
     printf("-----------------------------------------------------------------------------\n");
-    printf ("Olá, seja bem vindo ao  QUIZ, jogo de perguntas e respostas");
-    printf("\nOnde vc irá testar seus conhecimentos nas principais matérias da escola.");
-    printf("\nSeu objetivo é acertar todas as questões para conquistar as estrelas do jogo");
-    printf("\nse errar uma terá que começar novamente e perderá tudo.");
+    printf("\n\n* O jogo possui apenas uma alternativa correta;");
+    printf("\n\n* o Jogador tem que escolher uma alternatitva e digitar a letra em minúsculo;");
+    printf("\n\n* Após responder cada pergunta aperte ENTER e passe para a próxima;");
+    printf("\n\n* Lembrando que o programa só passa para outra pergunta, caso acerte a");
+    printf("\n  anterior;");
     printf("\n\n---------------------------------------------------------------------------");
-    printf("\n\n                    QUE A SORTE ESTEJA A SEU FAVOR!");
+    printf("\n\n                       QUE A SORTE ESTEJA A SEU FAVOR!");
     printf("\n\n---------------------------------------------------------------------------");
+    printf("\n\n\nVamos comecar! \n\n");
 
 // Comando para iniciar o jogo
-    printf("\n\nAperte enter para comecar!");
+    printf("\n\nAperte enter !");
+
     do{
         cod2 = getch();
     }while (cod2 != 13);
@@ -42,14 +89,16 @@ int main()
     system("cls");/*Limpar a tela anterior*/
 
     do{
-system("color B");
+
+
+    system("color B");/*Mudar a cor da linha*/
+
 //Titulo do jogo
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Primeira pergunta
-    printf ("Vamos comecar! \n\n");
     printf ("\n1) QUAL PALAVRA ESTA ESCRITA CORRETAMENTE?");
     printf("\n\na)Chicara");
     printf("\nb)Jiló");
@@ -58,20 +107,20 @@ system("color B");
     scanf ("\n%c", &cg_alt[0]);
 
 //Condicional if, para analisar a resposta do usuário
+    system("color f");/*Mudar a cor da linha*/
+
     if (cg_alt[0]=='b')
 {
-    printf("\nResposta certa");
-    printf("\n\nVoce acaba de ganhar a primeira estrela");
-    printf("\n\nVamos para a pergunta que vale a segunda estrela");
-    printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
+//Comando para mudar de tela apertando enter
      do{
         cod2 = getch();
     }while (cod2 != 13);
 
     system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
@@ -87,28 +136,26 @@ system("color B");
 }
 
 //Condicional if, para analisar a resposta do usuário
-            if (cg_alt[1]=='a')
+    if (cg_alt[1]=='a')
 {
+    system("color f");/*Mudar a cor da linha*/
 
-    printf("\nResposta certa");
-    printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-    printf("\n\nBOA SORTE!");
-    printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
+//Comando para mudar de tela apertando enter
     do{
         cod2 = getch();
     }while (cod2 != 13);
 
     system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Terceira pergunta
     printf ("\n3) QUAL O MAIOR ANIMAL DA TERRA?");
-    printf(" (base:3 e altura:8)");
     printf("\n\na)Elefante");
     printf("\nb)Tubarão-Baleia");
     printf("\nc)Baleia azul");
@@ -118,11 +165,11 @@ system("color B");
 //Condicional if, para analisar a resposta do usuário
     if (cg_alt[2]=='c')
 {
+    system("color f");/*Mudar a cor da linha*/
 
-    printf("\nResposta certa");
-    printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-    printf("\n\nBOA SORTE!");
-    printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
 
     do{
         cod2 = getch();
@@ -130,14 +177,13 @@ system("color B");
 
     system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+system("color B");;/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Quarta pergunta
     printf ("\n4)QUAL É O JOGO MAIS JOGADO NO MUNDO ATUALMENTE");
-    printf(" (base:3 e altura:8)");
     printf("\n\na)League of legends");
     printf("\nb)Counter strike");
     printf("\nc)Battlefield");
@@ -147,19 +193,19 @@ system("color B");
 //Condicional if, para analisar a resposta do usuário
     if (cg_alt[3]=='a')
 {
+    system("color f");/*Mudar a cor da linha*/
 
-    printf("\nResposta certa");
-    printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-    printf("\n\nBOA SORTE!");
-    printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
+//Comando para mudar de tela apertando enter
     do{
         cod2 = getch();
     }while (cod2 != 13);
 
     system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+system("color B");;/*Mudar a cor da linha*/
+
 //Quinta pergunta
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
@@ -177,45 +223,45 @@ system("color B");
 //Condicional if, para analisar a resposta do usuário
     if (cg_alt[4]=='c')
 {
-    printf("\nResposta certa");
-    printf("\n\nVoce acaba de ganhar a primeira estrela");
-    printf("\n\nVamos para a pergunta que vale a segunda estrela");
-    printf("\n\nAperte enter para continuar!");
+    system("color f");;/*Mudar a cor da linha*/
 
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
      do{
         cod2 = getch();
     }while (cod2 != 13);
 
     system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Sexta pergunta
     printf ("\n6)EM QUAL PAÍS FOI CONSTRUÍDO UM CANAL QUE LIGA OS OCEANOS ATLÂNTICO E PACÍFICO");
-    printf(" (base:3 e altura:8)");
     printf("\n\na)México");
     printf("\nb)Panamá");
     printf("\nc)EUA");
     printf("\n\nResposta: ");
     scanf ("\n%c", &cg_alt[5]);
 }
+//Condicional if, para analisar a resposta do usuário
     if (cg_alt[5]=='b')
 {
+    system("color f");/*Mudar a cor da linha*/
 
-    printf("\nResposta certa");
-    printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-    printf("\n\nBOA SORTE!");
-    printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
+//Comando para mudar de tela apertando enter
     do{
         cod2 = getch();
     }while (cod2 != 13);
 
-    system("cls");
-    system("color B");
+    system("cls");/*Limpar a tela anterior*/
+
+    system("color B");/*Mudar a cor da linha*/
 
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
@@ -223,377 +269,370 @@ system("color B");
 
 //Sétima pergunta
     printf ("\n7) QUAL A PROPOSIÇÃO COMPOSTA LOGICAMENTE VERDADEIRA:");
-        	printf("\n\na)(2=2)=>(2.3=5)");
-        	printf("\nb)(2=3)e(2.3=5)");
-        	printf("\nc)(2=3)=>(2.3=5)");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[6]);
-        }
+    printf("\n\na)(2=2)=>(2.3=5)");
+    printf("\nb)(2=3)e(2.3=5)");
+    printf("\nc)(2=3)=>(2.3=5)");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[6]);
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[6]=='c')
+{
+    system("color f");/*Mudar a cor da linha*/
 
-            if (cg_alt[6]=='c')
-        {
+    printf("\nCerta resposta.");
 
-        printf("\nResposta certa");
-        printf("\n\nCaramba! Você é bom mesmo.");
-        printf("\n\nFaltam apenas duas perguntas para conquistar a medalha de ouro");
-        printf("\n\nVAMOS LÁ!");
-        printf("\n\nAperte enter para continuar!");
-
-        do{
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Oitava pergunta
-printf ("\n8)QUAL PAÍS ESTÁ LOCALIZADO NA AMÉRICA DO NORTE:");
-    printf(" (base:3 e altura:8)");
-        	printf("\n\na)Haiti");
-        	printf("\nb)México");
-        	printf("\nc)Groelândia");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[7]);
-        }
-            if (cg_alt[7]=='c')
-        {
+    printf ("\n8)QUAL PAÍS ESTÁ LOCALIZADO NA AMÉRICA DO NORTE:");
+    printf("\n\na)Mongólia");
+    printf("\nb)Congo");
+    printf("\nc)Groelândia");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[7]);
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[7]=='c')
+{
+    system("color f");/*Mudar a cor da linha*/
 
-        printf("\nResposta certa");
-        printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-        printf("\n\nBOA SORTE!");
-        printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
-        do{
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Nona pergunta
     printf ("\n9) EM QUAL ALTERNATIVA ESTA A PALAVRA COM O GÊNERO INDICADO INCORRETAMENTE?");
-        	printf("\n\na)a ágape");
-        	printf("\nb)a grama");
-        	printf("\nc)a hélice");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[8]);
-        }
-            if (cg_alt[8]=='a')
-        {
+    printf("\n\na)a ágape");
+    printf("\nb)a grama");
+    printf("\nc)a hélice");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[8]);
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[8]=='a')
+{
+    system("color f");/*Mudar a cor da linha*/
 
-        printf("\nResposta certa");
-        printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-        printf("\n\nBOA SORTE!");
-        printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
-        do{
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima pergunta
-        printf ("\10) O TÉTANO É UMA DOENÇA AGUDA E CONTAGIOSA QUE PODE SER");
-        	printf("\nPREVENIDA MEDIANTE CUIDADOS COM O AMBIENTE HIGIENE PESSOAL E VETORES?");
-        	printf("\n\na)Certo");
-        	printf("\nb)Errado");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[9]);
-        }
-//Condicional if, para analisar a resposta do usuário
-        if (cg_alt[9]=='b')
-        {
-            printf("\nResposta certa");
-            printf("\n\nVoce acaba de ganhar a primeira estrela");
-            printf("\n\nVamos para a pergunta que vale a segunda estrela");
-            printf("\n\nAperte enter para continuar!");
+    printf ("\10)O TÉTANO É UMA DOENÇA AGUDA E CONTAGIOSA QUE PODE SER");
+    printf("\nPREVENIDA MEDIANTE CUIDADOS COM O AMBIENTE HIGIENE PESSOAL E VETORES?");
+    printf("\n\na)Certo");
+    printf("\nb)Errado");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[9]);
 
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[9]=='b')
+{
+    system("color f");/*Mudar a cor da linha*/
+
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
      do{
         cod2 = getch();
-
     }while (cod2 != 13);
 
+    system("cls");/*Limpar a tela anterior*/
 
-    system("cls");
-
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima primeira pergunta
-     printf ("\n11)CAPITÃES DE AREIA É UM ROMANCE ESCRITO POR QUAL AUTOR?");
-        	printf("\n\na)Guimarães Rosa");
-        	printf("\nb)Machado de Assis.");
-        	printf("\nc)Jorge Amado.");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[10]);
-        }
-            if (cg_alt[10]=='c')
-        {
+    printf ("\n11)CAPITÃES DE AREIA É UM ROMANCE ESCRITO POR QUAL AUTOR?");
+    printf("\n\na)Guimarães Rosa");
+    printf("\nb)Machado de Assis.");
+    printf("\nc)Jorge Amado.");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[10]);
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[10]=='c')
+{
+    system("color f");/*Mudar a cor da linha*/
 
-        printf("\nResposta certa");
-        printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-        printf("\n\nBOA SORTE!");
-        printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
-        do{
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
-
 //Décima Segunda pergunta
-        printf ("\n12) O PLURAL DE FOGÃOZINHO E CIDADÃ É: ");
-        	printf("\n\na)fogõezinhos e cidadãos.");
-        	printf("\nb)fogãozinhos e cidadãos.");
-        	printf("\nc)fogõezinhos e cidadões.");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[11]);
-        }
-        system("cls");/*Limpar a tela anterior*/
-            if (cg_alt[11]=='a')
-        {
+    printf ("\n12) O PLURAL DE FOGÃOZINHO E CIDADÃ É: ");
+    printf("\n\na)fogõezinhos e cidadãos.");
+    printf("\nb)fogãozinhos e cidadãos.");
+    printf("\nc)fogõezinhos e cidadões.");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[11]);
+}
 
-        printf("\nResposta certa");
-        printf("\n\nCaramba! Você é bom mesmo.");
-        printf("\n\nFaltam apenas duas perguntas para conquistar a medalha de ouro");
-        printf("\n\nVAMOS LÁ!");
-        printf("\n\nAperte enter para continuar!");
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[11]=='a')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        do{
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
 
-        }while (cod2 != 13);
+    }while (cod2 != 13);
 
-        system("cls");
+    system("cls");/*Limpar a tela anterior*/
 
-system("color B");
+    system("color B");;/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima terceira pergunta
-        printf ("\n13)QUE FOI O ATOR PRINCIPAL DO FILME SR E SRª SMITH ");
-        	printf("\n\na)Brad Pitt.");
-        	printf("\nb)Tom Hanks");
-        	printf("\nc)Tom Cruise");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[12]);
-        }
-            if (cg_alt[12]=='a')
-        {
+    printf ("\n13)QUE FOI O ATOR PRINCIPAL DO FILME SR E SRª SMITH ");
+    printf("\n\na)Brad Pitt");
+    printf("\nb)Tom Hanks");
+    printf("\nc)Tom Cruise");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[12]);
+}
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[12]=='a')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        printf("\nResposta certa");
-        printf("\n\nCaramba! Você é bom mesmo.");
-        printf("\n\nFaltam apenas duas perguntas para conquistar a medalha de ouro");
-        printf("\n\nVAMOS LÁ!");
-        printf("\n\nAperte enter para continuar!");
+    printf("\nCerta resposta.");
 
-        do{
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+system("color B");;/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima quarta pergunta
-        printf ("\n14)DADA AS SENTENÇAS: ");
-        printf("\n 1. Ele não chegou a falar com a Presidenta;");
-        printf("\n 2. Ele sofreu um entorse grave;");
-        printf("\n 3. A tracoma é uma doença contagiosa.");
-        printf("\nDeduzimos que:");
-        printf("\n\na)apenas a sentença 2 está correta");
-        printf("\nb) todas estão corretas");
-        printf("\nc)apenas a sentença 1 está correta");
-        printf("\n\nResposta: ");
-        scanf ("\n%c", &cg_alt[13]);
-        }
-            if (cg_alt[13]=='c')
-        {
+    printf ("\n14)DADA AS SENTENÇAS: ");
+    printf("\n 1. Ele não chegou a falar com a Presidenta;");
+    printf("\n 2. Ele sofreu um entorse grave;");
+    printf("\n 3. A tracoma é uma doença contagiosa.");
+    printf("\nDeduzimos que:");
+    printf("\n\na)apenas a sentença 2 está correta");
+    printf("\nb) todas estão corretas");
+    printf("\nc)apenas a sentença 1 está correta");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[13]);
+}
 
-        printf("\nResposta certa");
-        printf("\n\nEstá chegando ao final");
-        printf("\n\Falta apenas uma pergunta para a conquista da medalha de ouro");
-        printf("\n\nPARA, RESPIRA E...Aperte enter para continuar!");
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[13]=='c')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        do{
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");;/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima quinta pergunta
-        printf ("\n15)QUAL ANIME JAPONÊS POSSUI UMA RAPOUSA DE NOVE CALDAS");
-            printf("\n\na)Bleach");
-        	printf("\nb)Alvin e os esquilos");
-        	printf("\nc)Naruto");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[14]);
-        }
-            if (cg_alt[14]=='c')
-        {
+    printf ("\n15)QUAL ANIME JAPONÊS POSSUI UMA RAPOUSA DE NOVE CALDAS");
+    printf("\n\na)Bleach");
+    printf("\nb)Alvin e os esquilos");
+    printf("\nc)Naruto");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[14]);
+}
 
-        printf("\nResposta certa");
-        printf("\n\nEstá chegando ao final");
-        printf("\n\Falta apenas uma pergunta para a conquista da medalha de ouro");
-        printf("\n\nPARA, RESPIRA E...Aperte enter para continuar!");
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[14]=='c')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        do{
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-system("color B");
+    system("color B");;/*Mudar a cor da linha*/
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima sexta pergunta
-        printf ("\n16) DETERMINE A ÁREA DE UM TRIÂNGULO COM BASE NOS SEGUINTES DADOS:");
+    printf ("\n16) DETERMINE A ÁREA DE UM TRIÂNGULO COM BASE NOS SEGUINTES DADOS:");
     printf(" (base:3 e altura:8)");
-        	printf("\n\na)12");
-        	printf("\nb)11");
-        	printf("\nc)16");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[15]);
-        }
-            if (cg_alt[15]=='a')
-        {
-system("color B");
-        printf("\nResposta certa");
-        printf("\n\nParabéns você ganhou a segunda estrela, vamos para a terceira");
-        printf("\n\nBOA SORTE!");
-        printf("\n\nAperte enter para continuar!");
+    printf("\n\na)12");
+    printf("\nb)11");
+    printf("\nc)16");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[15]);
+}
 
-        do{
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[15]=='a')
+{
+    system("color f");/*Mudar a cor da linha*/
+
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
+    system("color B");;/*Mudar a cor da linha*/
 
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima sétima pergunta
-            printf ("\n17)QUAL ALTERNATIVA HÁ ERRO NA FLEXÃO DE NÚMEROS? ");
-            printf("\n\na)as águas-marinhas, as públicas-formas, os acórdãos");
-        	printf("\nb)capitães-mor, sabiás-pirangas, autos-de-fé");
-        	printf("\nc)guardas-florestais, malmequeres, Ave-Marias");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[16]);
-        }
-            if (cg_alt[16]=='b')
-        {
+    printf ("\n17)QUAL ALTERNATIVA HÁ ERRO NA FLEXÃO DE NÚMEROS? ");
+    printf("\n\na)as águas-marinhas, as públicas-formas, os acórdãos");
+    printf("\nb)capitães-mor, sabiás-pirangas, autos-de-fé");
+    printf("\nc)guardas-florestais, malmequeres, Ave-Marias");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[16]);
+}
 
-        printf("\nResposta certa");
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[16]=='b')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        do{
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-system("color B");
+    system("color B");;/*Mudar a cor da linha*/
 
     printf("-----------------------------------------------------------------------------\n");
     printf("                                  QUIZ\n");
     printf("-----------------------------------------------------------------------------\n");
 
 //Décima oitava pergunta
-        printf ("\n18)QUEM CANTA A MÚSICA CINQUENTA REIS");
-            printf("\n\na)Naiara Azevedo");
-        	printf("\nb)Maiara e Maraisa");
-        	printf("\nc)Marília Mendoça");
-        	printf("\n\nResposta: ");
-			scanf ("\n%c", &cg_alt[17]);
-        }
-            if (cg_alt[17]=='a')
-        {
+    printf ("\n18)QUEM CANTA A MÚSICA CINQUENTA REIS");
+    printf("\n\na)Naiara Azevedo");
+    printf("\nb)Maiara e Maraisa");
+    printf("\nc)Marília Mendoça");
+    printf("\n\nResposta: ");
+    scanf ("\n%c", &cg_alt[17]);
+}
 
-        printf("\nResposta certa");
+//Condicional if, para analisar a resposta do usuário
+    if (cg_alt[17]=='a')
+{
+    system("color f");;/*Mudar a cor da linha*/
 
-        do{
+    printf("\nCerta resposta.");
+
+//Comando para mudar de tela apertando enter
+    do{
         cod2 = getch();
+    }while (cod2 != 13);
 
-        }while (cod2 != 13);
+    system("cls");/*Limpar a tela anterior*/
 
-        system("cls");
-
-    printf("\n\n---------------------------------------------------------------------------");
-    printf("\n\n                         PARABÉNSSSSSS!");
-    printf("\n\n---------------------------------------------------------------------------");
-         printf("\n\nVOCÊ CONQUITOU AS CINCO ESTRELAS, ISSO PROVA QUE VOCÊ ANDA ESTUDANDO");
-         printf("\n\nGUARDA ESSA MEDALHA DE OURO, FOI MUITO BEM MERECIDA");
-         printf("\n\nSE DESEJAR FINALIZAR O JOGO É SÓ APERTAR ENTER");
-         printf("\n\nE LEMBRE-SE AINDA TEM OUTROS DESAFIOS NO NOSSO QUIZ");
-         printf("\n\nBASTA DIGITAR 0 E VOCÊ SERÁ DIRECIONADO PARA O MENU INICIAL");
-         scanf("%d", &resp);
-        system("cls");
-
-
-
-
-
-        }
-
-        else
-system("color C");
-      	{
-
-    printf("-----------------------------------------------------------------------------\n");
-    printf ("\n\nVOCÊ ERROU!\n");
-      		printf("\n Deseja jogar novamente?");
-      		printf("\n\nSe sim digite 0 se não digite 1: ");
-      		scanf("\n\n%d", &resp);
-    printf("\n-----------------------------------------------------------------------------\n");
-        system("cls");/*Limpar a tela anterior*/
-      	      	}
+    printf("\n\n------------------------------------------------------------------------------");
+    printf("\n\n                           PARABÉNSSSSSS!");
+    printf("\n\n------------------------------------------------------------------------------");
+    printf("\n\n                     VOCÊ GANHOU A MEDALHA DE OURO");
+    printf("\n            ACERTOU TODAS QUESTÕES, ISSO PROVA QUE VOCÊ ANDA ESTUDANDO");
+    printf("\n                GUARDA ESSA MEDALHA DE OURO, FOI MUITO BEM MERECIDA");
+    printf("\n\n                   SE DESEJAR FINALIZAR O JOGO É SÓ DIGITAR (1)");
+    printf("\n                MAS SE QUISER JOGAR NOSSO SUPER QUIZ NOVAMENTE");
+    printf("\n             BASTA DIGITAR (0) E VOCÊ SERÁ DIRECIONADO PARA O INICIO");
+    scanf("%d", &resp);
 
 }
 
+//Utiliza a condiciona else caso o o usuário responda errado alguma questão
+    else
+    system("cls");/*Limpar a tela anterior*/
+    system("color C");;/*Mudar a cor da linha*/
+{
+    printf ("\n\n                    VOCÊ ERROU!\n");
+    printf("\n\n           Deseja jogar novamente?");
+    printf("\n\n       Se sim digite 0 se não digite 1: ");
+    scanf("\n\n%d", &resp);
 
+    system("cls");/*Limpar a tela anterior*/
+}
+
+}
+//Utilizar a estrutura do...while para retornar ao início caso o usuário deseje
     while (resp==0);
 
-    system("cls");
+//Apresentar a mensagem de agradecimento após o usuário finalizar o jogo
+    system("cls");/*Limpar a tela anterior*/
     printf("\n\nOBRIGADO POR PARTICIPAR DO QUIZ");
 
 
